@@ -1,22 +1,22 @@
 const express = require("express");
-const path = require("path");
+// const path = require("path");
 const logger = require("morgan");
-// const cors = require('cors');
+const cors = require('cors');
 
 require("dotenv").config();
 
 require("./config/database");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
 app.use(logger("dev"));
 app.use(express.json());
 
-// app.use(cors({ origin: process.env.CLIENT_ORIGIN || `http://localhost:3000` }))
+app.use(cors({ origin: process.env.CLIENT_ORIGIN || `http://localhost:3000` }))
 
-app.use(express.static(path.join(__dirname, "build")));
+// app.use(express.static(path.join(__dirname, "build")));
 // importing the checkToken middleware
 app.use(require("./config/checkToken"));
 
