@@ -1,0 +1,20 @@
+.logo img {
+    position: relative;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    margin-left: 16px;
+    background: #00be13;
+}
+
+.logo {
+    font-size: 35px;
+    color: white;
+    font-family: 'Righteous', cursive;
+    
+}
+
+.container-sm{
+    background-color: rgb(236, 236, 233);
+    max-width: 800px;
+}

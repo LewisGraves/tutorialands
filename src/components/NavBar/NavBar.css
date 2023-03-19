@@ -1,0 +1,41 @@
+.nav {
+    background-color: #00be13;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-container {
+    margin-right: 30px;
+    border-radius: 10px
+}
+
+.nav li a {
+    display: inline;
+    color: white;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    right: 10px;
+    background: #FB8500;
+}
+
+.logo #logo-name {
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+}
+
+#collapse {
+    background-color: transparent;
+    border-radius: 5px;
+    color: rgb(236, 236, 233);
+    border-color: rgb(236, 236, 233);
+}

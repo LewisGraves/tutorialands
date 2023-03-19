@@ -1,0 +1,21 @@
+.update-form {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap:10px;
+    grid-row-gap:10px;
+    padding: 10px;
+    }
+
+.title { grid-area: 1 / 1 / 2 / 2; }
+
+.title-update { grid-area: 1 / 2 / 2 / 6; }
+
+.text { grid-area: 3 / 1 / 4 / 2; }
+
+.text-update { grid-area: 3 / 2 / 4 / 6; }
+
+.updateLink {
+    text-decoration: none;
+    color: #fff;
+}
